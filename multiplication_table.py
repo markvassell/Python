@@ -39,3 +39,4 @@ except:
 #https://docs.python.org/2/tutorial/errors.html
 
 #how to write to a file in python.
+#http://learnpythonthehardway.org/book/ex16.html
