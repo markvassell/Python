@@ -3,7 +3,7 @@ print("Press return after each number")
 #array that stores the users inputs
 input_number = []
 
-#loop to lood the user's ten integer inputs in the array
+#this loop loads the user's ten integer inputs in the array
 for i in range(10):
     while True:
         try:
