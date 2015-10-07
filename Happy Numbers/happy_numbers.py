@@ -17,7 +17,7 @@ for i in range(10):
         except ValueError:
             print("Please only input positive numerical values.")
             continue
-print("Thank you running....")
+
 #function to add the values in an array together then return the total.
 def adder (array):
     add = 0
@@ -60,7 +60,7 @@ for x in input_number:
     origin_value = x
     counter = 0
     if origin_value == 1:
-        print ("{0} happy number at loop {1}".format(origin_value, counter))
+        print ("happy {0}".format(origin_value, counter))
         continue
     else:
         split_array = make_split(str(x))
@@ -72,7 +72,7 @@ for x in input_number:
     while True:
         if (summed_value == 1):
  
-            print ("{0} happy number at loop {1}".format(origin_value, counter))
+            print ("happy {0}".format(counter))
             break
         else:
             
@@ -81,7 +81,7 @@ for x in input_number:
             if (finder == 1):
                 if origin_value < 10:
                     counter -= 1
-                print("{0} unhappy number at loop {1}".format(origin_value, counter))
+                print("unhappy {0}".format(counter))
                 break
             else:
                 num_array.append(finder)
