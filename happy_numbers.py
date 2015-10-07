@@ -21,7 +21,7 @@ print("Thank you running....")
 #function to add the values in an array together then return the total.
 def adder (array):
     add = 0
-    for i in aarray:
+    for i in array:
         add = add + i
 
     return add
@@ -58,18 +58,23 @@ for x in input_number:
     split_array = []
     num_array = []
     origin_value = x
-    split_array = make_split(str(x))
-    split_array = sqr(split_array)
-    summed_value = adder(split_array)
+    counter = 0
+    if origin_value == 1:
+        print ("{0} happy number at loop {1}".format(origin_value, counter))
+        continue
+    else:
+        split_array = make_split(str(x))
+        split_array = sqr(split_array)
+        summed_value = adder(split_array)
 
-    counter = 1;
+        counter = 1;
 
     while True:
         if (summed_value == 1):
             print ("{0} happy number at loop {1}".format(origin_value, counter))
             break
         else:
-            counter += 1
+            
             finder = found(summed_value, num_array)
 
             if (finder == 1):
@@ -80,7 +85,8 @@ for x in input_number:
                 split_array = make_split(str(summed_value))
                 split_array = sqr(split_array)
                 summed_value = adder(split_array)
-                continue
+        counter += 1
+        continue
 
 
 
