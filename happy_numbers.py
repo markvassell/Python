@@ -71,6 +71,7 @@ for x in input_number:
 
     while True:
         if (summed_value == 1):
+ 
             print ("{0} happy number at loop {1}".format(origin_value, counter))
             break
         else:
@@ -78,6 +79,8 @@ for x in input_number:
             finder = found(summed_value, num_array)
 
             if (finder == 1):
+                if origin_value < 10:
+                    counter -= 1
                 print("{0} unhappy number at loop {1}".format(origin_value, counter))
                 break
             else:
