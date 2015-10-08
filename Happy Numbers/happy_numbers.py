@@ -60,7 +60,7 @@ for x in input_number:
     origin_value = x
     counter = 0
     if origin_value == 1:
-        print ("happy {0}".format(origin_value, counter))
+        print ("happy {0}".format(counter))
         continue
     else:
         split_array = make_split(str(x))
